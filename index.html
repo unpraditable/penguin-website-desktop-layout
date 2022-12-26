@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A web application to show photos of penguins"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Aditya Pradita" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penguin Photo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://user-images.githubusercontent.com/2970318/209440270-8940c110-dcd2-45ba-aeef-d316cb241b00.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <span>
+          <img
+            src="https://user-images.githubusercontent.com/2970318/209562035-bdbfb418-b564-4676-91bc-286fa03ca4d8.png"
+            alt="Penguin Fan Club Icon"
+          />
+          <b>Penguin Club</b>
+        </span>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <section id="header">
+        <h1>Penguin Photo App</h1>
+        <p>This is an app about the most beautiful creature in the world!</p>
+      </section>
+
+      <section>
+        <h2>Penguin Photos</h2>
+        <a href="https://freecatphotoapp.com">
+          <img
+            src="https://user-images.githubusercontent.com/2970318/209440135-dadf88ab-80b9-4e81-bed1-1f517e8f9286.jpg"
+            alt="Three penguins walking in a snowy field."
+          />
+        </a>
+      </section>
+
+      <section id="penguin-facts">
+        <h2>Facts about penguins</h2>
+        <div class="flex-container">
+          <ul>
+            <li>Penguins can swim</li>
+            <li>Penguins love to socialize</li>
+            <li>Penguin is the most gorgeous animal in the world!</li>
+          </ul>
+          <figure>
+            <img
+              src="https://user-images.githubusercontent.com/2970318/209440113-f43e969d-0ddd-4b38-917c-dd953ad1839b.jpg"
+              alt="A penguin swims under the deep sea."
+            />
+            <figcaption>Penguin <em>flies</em> underwater.</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="penguin-place">
+        <h2>Where to find penguins?</h2>
+        <div class="flex-container row-reverse">
+          <p>
+            The standard Lorem Ipsum passage, used since the 1500s "Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum." Section 1.10.32 of "de
+            Finibus Bonorum et Malorum", written by Cicero in 45 BC "Sed ut
+            perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+            aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+            ratione voluptatem sequi nesciunt.
+          </p>
+          <figure>
+            <img
+              src="https://user-images.githubusercontent.com/2970318/209439958-1c0b97fd-6fa2-452b-91aa-e5037a6df657.jpg"
+              alt="Penguins looking at the window from inside Skopje Zoo."
+            />
+            <figcaption>Penguins in a local aquarium</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section>
+        <h2>A baby cute penguin video!</h2>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/q3uXXh1sHcI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section>
+        <h2>Join our penguin fanclub!</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Personal Data:</legend>
+            <div>
+              <label for="fullName">Full Name:</label>
+              <input id="fullName" type="text" required />
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" type="email" required />
+            </div>
+
+            <div>
+              <p>Are you living in Indonesia?</p>
+              <input type="radio" id="yes" name="isIndonesia" value="Male" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="isIndonesia" value="Female" />
+              <label for="no">No</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Additional information:</legend>
+            <div>
+              <p>What do you think about a penguin?</p>
+              <input
+                id="cute"
+                type="checkbox"
+                name="personality"
+                value="cute"
+              />
+              <label for="cute">Cute</label>
+              <input
+                id="adorable"
+                type="checkbox"
+                name="personality"
+                value="adorable"
+              />
+              <label for="adorable">Adorable</label>
+              <input
+                id="beautiful"
+                type="checkbox"
+                name="personality"
+                value="beautiful"
+              />
+              <label for="beautiful">Beautiful</label>
+            </div>
+            <div>
+              <p>Tell us why you love penguins!</p>
+              <textarea rows="3"></textarea>
+            </div>
+            <div>
+              <p>Upload your favorite penguin picture here:</p>
+              <input
+                type="file"
+                id="photo"
+                name="myPenguinPhoto"
+                required
+                accept="image/png, image/jpeg"
+              />
+            </div>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
