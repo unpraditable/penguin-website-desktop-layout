@@ -3,6 +3,14 @@ body {
   margin: 0;
 }
 
+section {
+  margin: 0 16px;
+}
+
+section.full-screen {
+  margin: 0;
+}
+
 nav {
   display: flex;
   align-items: center;
